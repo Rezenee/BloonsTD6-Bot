@@ -7,10 +7,9 @@ right3 = (1475, 785)
 left1 = (260, 485)
 left2 = (260, 635)
 left3 = (260, 785)
-
 # Un comment this to get a box that shows the coordinates of your mouse.
 # Use this to see where to place the towers
-pyautogui.mouseInfo()
+#pyautogui.mouseInfo()
 pyautogui.PAUSE = 0.1
 
 class Tower:
@@ -178,6 +177,7 @@ def checkForGameEnd(restartMap, farms=None, round100=None):
         return 1
     if round100 == 1:
         if pyautogui.pixelMatchesColor(933, 811, (156, 255, 0), tolerance=10):
+            time.sleep(1)
             pyautogui.click()
             time.sleep(1)
             pyautogui.click(880, 900)
