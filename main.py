@@ -96,11 +96,11 @@ class Tower:
             checkForLevelUp(self.restartMap, self.farms, self.coords)
             if pyautogui.pixelMatchesColor(buttonCoords[0], buttonCoords[1], (80, 213, 0), tolerance=10):
                 if path == 1:
-                    pyautogui.press("'")
-                elif path == 2:
                     pyautogui.press(",")
-                elif path == 3:
+                elif path == 2:
                     pyautogui.press(".")
+                elif path == 3:
+                    pyautogui.press("/")
                 count += 1
 
         count2 = 0
@@ -109,11 +109,11 @@ class Tower:
                 checkForLevelUp(self.restartMap, self.farms, self.coords)
                 if pyautogui.pixelMatchesColor(buttonCoords2[0], buttonCoords2[1], (84, 222, 0), tolerance=20):
                     if path2 == 1:
-                        pyautogui.press("'")
-                    elif path2 == 2:
                         pyautogui.press(",")
-                    elif path2 == 3:
+                    elif path2 == 2:
                         pyautogui.press(".")
+                    elif path2 == 3:
+                        pyautogui.press("/")
                     count2 += 1
         if temple == None:
             pyautogui.click(1635, 0)
@@ -126,7 +126,7 @@ class Tower:
         time.sleep(.05)
         pyautogui.click(self.xCord, self.yCord)
         time.sleep(.05)
-        pyautogui.press('p')
+        pyautogui.press('backspace')
 # Enter the coordinates of the towers that you want to place
 
 def checkForDeath(restartMap):
