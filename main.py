@@ -10,7 +10,7 @@ left2 = (260, 635)
 left3 = (260, 785)
 # Un comment this to get a box that shows the coordinates of your mouse.
 # Use this to see where to place the towers
-pyautogui.mouseInfo()
+#pyautogui.mouseInfo()
 pyautogui.PAUSE = 0.1
 
 class Tower:
