@@ -100,11 +100,11 @@ class Tower:
             checkForLevelUp(self.restartMap, self.farms, self.coords)
             if pyautogui.pixelMatchesColor(buttonCoords[0], buttonCoords[1], (80, 213, 0), tolerance=10):
                 if path == 1:
-                    pyautogui.press(",")
+                    pyautogui.press("'")
                 elif path == 2:
-                    pyautogui.press(".")
+                    pyautogui.press(",")
                 elif path == 3:
-                    pyautogui.press("/")
+                    pyautogui.press(".")
                 count += 1
 
         count2 = 0
@@ -113,11 +113,11 @@ class Tower:
                 checkForLevelUp(self.restartMap, self.farms, self.coords)
                 if pyautogui.pixelMatchesColor(buttonCoords2[0], buttonCoords2[1], (84, 222, 0), tolerance=20):
                     if path2 == 1:
-                        pyautogui.press(",")
+                        pyautogui.press("'")
                     elif path2 == 2:
-                        pyautogui.press(".")
+                        pyautogui.press(",")
                     elif path2 == 3:
-                        pyautogui.press("/")
+                        pyautogui.press(".")
                     count2 += 1
         if temple == None:
             pyautogui.click(1635, 0)
