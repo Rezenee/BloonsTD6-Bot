@@ -130,7 +130,7 @@ class Tower:
         time.sleep(.05)
         pyautogui.click(self.xCord, self.yCord)
         time.sleep(.05)
-        pyautogui.press('p')
+        pyautogui.press('backspace')
 # Enter the coordinates of the towers that you want to place
 
 def checkForDeath(restartMap):
